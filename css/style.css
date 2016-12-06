@@ -1,0 +1,1080 @@
+/**************************************
+ *                                    *
+ *       MATEUS GOMES DA ROCHA        *
+ *     mateusgmsrocha@gmail.com       *
+ *        Início: 05/10/2016          *
+ *       Editado: 27/11/2016          *
+ *                                    *
+ **************************************/
+
+body{
+  background: #eee;
+}
+
+/**************************************
+ *                                    *
+ *       PÁGINA DE AUTENTICAÇÃO       *
+ *                                    *
+ **************************************/
+
+#loginLogo{
+  margin-bottom: 10px;
+  text-align: center;
+  width: 320px;
+}
+
+#loginLogo > span{
+  color: #fff;
+  line-height: 100px;
+}
+
+#loginBox{
+  background: #007031; /* essa cor define a cor de todos os outros elementos, pois todos eles têm transparência */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  padding: 30px 10px 20px 10px;
+  text-align: center;
+  width: 300px;
+}
+
+#loginBox > h1{
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  cursor: default;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+}
+
+#loginBox > form > input{
+  background: rgba(0,0,0,0.3);
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.5);
+  color: rgba(255,255,255,0.8);
+  height: 15px;
+  margin-top: 10px;
+  outline: none;
+  padding: 10px;
+  width: 220px;
+}
+
+#loginBox > form > input:hover{
+  background: rgba(0,0,0,0.2);
+}
+
+#loginBox > form > input:focus{
+  background: rgba(0,0,0,0.2);
+  border-color: rgba(0,0,0,0.3);
+}
+
+#loginBox > form > input:last-of-type{
+  margin-bottom: 5px;
+}
+
+#loginBox > form > a{
+  color: rgba(255,255,255,0.7);
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+#loginBox > form > a:hover{
+  color: rgba(255,255,255,0.9);
+  font-style: italic;
+}
+
+#loginBox > form > button{
+  background: rgba(255,255,255,0.8);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 10px;
+  outline: none;
+  text-transform: uppercase;
+  width: 240px;
+}
+
+#loginBox > form > button:hover{
+  background: rgba(255,255,255,0.9);
+  font-style: italic;
+}
+
+#center-loginBox{
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -240px;
+  position: absolute;
+  top: 50%;
+}
+
+/**************************************
+ *                                    *
+ *           MENU SUPERIOR            *
+ *                                    *
+ **************************************/
+
+ #headerMenu{
+   background: #007031; /* essa cor define a cor de todos os outros elementos, pois todos eles têm transparência */
+   height: 60px;
+   -webkit-user-select: none;
+   width: 100%;
+   margin-bottom: 20px;
+ }
+
+ #menuLogo{
+   display: inline-block;
+   float: left;
+   height: 80%;
+   margin-top: 5px;
+ }
+
+ #menuList{
+   display: inline-block;
+   float: left;
+ }
+
+ #menuList > li{
+   background: rgba(0,0,0, 0.1);
+   color: rgba(255,255,255,0.7);
+   display: inline-block;
+   font-family: Arial, sans-serif;
+   font-weight: bold;
+   line-height: 60px;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-transform: uppercase;
+ }
+
+ li a, .dropbtn{
+   color: rgba(255,255,255,0.9);
+   letter-spacing: 1px;
+   text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    color: rgba(255,255,255,1);
+    font-style: italic;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content{
+    background-color: #055729; /* essa cor define a cor de todos os outros elementos, pois todos eles têm transparência */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: -10px;
+    min-width: 160px;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: rgba(255,255,255,0.7);
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+
+.dropdown-content a:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover{
+  background: rgba(0,0,0,0.4) !important;
+  cursor: pointer;
+}
+
+#menuUser{
+  float: right;
+  font-family: Arial, sans-serif;
+  margin-right: 20px;
+}
+
+#menuUser > a{
+  color: rgba(255,255,255,0.9);
+  font-size: 25px;
+  text-decoration: none;
+}
+
+#menuUser > a:hover{
+  color: rgba(255,255,255,1);
+}
+
+#menuUser > a:first-of-type{
+  background: rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+}
+
+#menuUser > a:first-of-type:hover{
+  background: rgba(0,0,0,0.4);
+  font-style: italic;
+}
+
+#menuUser > a:last-of-type{
+  font-size: 30px;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+/**************************************
+ *                                    *
+ *               RODAPÉ               *
+ *                                    *
+ **************************************/
+
+footer{
+  background: #007031; /* essa cor define a cor de todos os outros elementos, pois todos eles têm transparência */
+  bottom: 0;
+  font-size: 14px;
+  height: 40px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+footer > button{
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  background: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,0.8);
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 8px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  -webkit-user-select: none;
+}
+
+footer > button:hover{
+  background: rgba(0,0,0,0.4);
+  font-style: italic;
+}
+
+/* The Modal (background) */
+.devModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: Arial, sans-serif;
+}
+
+/* Modal Content/Box */
+.devModal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+.devModal-content > h1{
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.devModal-content > h2{
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.devModal-content > p{
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.devModal-content > div{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.devModal-content > div > i{
+  margin-right: 2px;
+  font-size: 25px;
+}
+
+.devModal-content > div > i:last-of-type{
+  margin-left: 10px;
+}
+
+/* The Close Button */
+.closeModal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    -webkit-user-select: none;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/**************************************
+ *                                    *
+ *               MAIN                 *
+ *                                    *
+ **************************************/
+
+#contentMain{
+  width: 100%;
+  text-align: center;
+}
+
+#contentMain > h1{
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  background: #222;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#contentMain > h2{
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  background: #222;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#contentMain > h3{
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  background: #222;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/**************************************
+ *                                    *
+ *             SINGLE ADD             *
+ *                                    *
+ **************************************/
+
+#contentSingleAdd{
+  margin-left: 30px;
+}
+
+ #contentSingleAdd > h1{
+   font-family: Arial, sans-serif;
+   font-size: 20px;
+   letter-spacing: 1px;
+   font-style: italic;
+   font-weight: bold;
+   padding: 10px 15px 10px 15px;
+   background: #222;
+   color: #fff;
+   text-transform: uppercase;
+   display: inline-block;
+   margin-top: 10px;
+ }
+
+#contentSingleAdd > h1 > a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+#contentSingleAdd > h1 > a:hover{
+  color: #d12f2f;
+}
+
+ #contentSingleAdd > div:first-of-type{
+   float: left;
+   margin-top: 20px;
+   width: 247px;
+   background: rgba(0,0,0,0.0);
+   margin-right: 200px;
+   height: auto !important;
+ }
+
+ #contentSingleAdd > div:first-of-type > form > input{
+   width: 220px;
+   border: none;
+   border-left: 6px solid #222;
+   border-top: 1px solid #222;
+   border-right: 1px solid #222;
+   border-bottom: 1px solid #222;
+   margin-bottom: 10px;
+   outline: none;
+   padding: 10px;
+   font-size: 20px;
+ }
+
+#contentSingleAdd > div:first-of-type > form > input:focus{
+  border-color: #007031;
+  font-style: italic;
+}
+
+#contentSingleAdd > div:first-of-type > form > button:first-of-type{
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#contentSingleAdd > div:first-of-type > form > button:first-of-type:hover{
+  color: #d12f2f;
+}
+
+#contentSingleAdd > div:first-of-type > form > button:last-of-type{
+  border: none;
+  background: #222;
+  outline: none;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 10px 5px 10px;
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contentSingleAdd > div:first-of-type > form > button:last-of-type:hover{
+  font-style: italic;
+}
+
+#contentSingleAdd > div:last-of-type{
+  float: left;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+#contentSingleAdd > div:last-of-type > table{
+  background: #222;
+  color: rgba(255,255,255,0.95);
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+}
+
+#contentSingleAdd > div:last-of-type td{
+  font-size: 16px;
+  padding: 10px;
+}
+
+#contentSingleAdd > div:last-of-type tbody td:first-of-type{
+  text-align: left;
+}
+
+#contentSingleAdd > div:last-of-type tbody td{
+  text-align: center;
+  max-width: 150px;
+}
+
+#contentSingleAdd > div:last-of-type tbody td a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.95);
+}
+
+#contentSingleAdd > div:last-of-type tbody td a:hover{
+  color: #d12f2f;
+}
+
+#contentSingleAdd > div:last-of-type tbody tr:nth-child(odd){
+  background: #444;
+}
+
+#contentSingleAdd > div:last-of-type tbody tr:nth-child(even){
+  background: #555;
+}
+
+#contentSingleAdd > div:last-of-type th{
+  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/**************************************
+ *                                    *
+ *             DOUBLE ADD             *
+ *                                    *
+ **************************************/
+
+#contentDoubleAdd{
+  margin-left: 30px;
+}
+
+
+#contentDoubleAdd > h1{
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  background: #222;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#contentDoubleAdd > div:first-of-type div h2{
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  background: #222;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+  overflow: none;
+  white-space: nowrap;
+}
+
+#contentDoubleAdd > div:first-of-type div > div{
+  margin-top: 20px;
+  width: 247px;
+  background: rgba(0,0,0,0.0);
+}
+
+#contentDoubleAdd > div:first-of-type div > div:last-of-type{
+  margin-bottom: 50px;
+}
+
+#contentDoubleAdd > div:first-of-type div > div > form > input{
+  width: 220px;
+  border: none;
+  border-left: 6px solid #222;
+  border-top: 1px solid #222;
+  border-right: 1px solid #222;
+  border-bottom: 1px solid #222;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#contentDoubleAdd > div:first-of-type div > div > form > input:focus{
+ border-color: #007031;
+ font-style: italic;
+}
+
+#contentDoubleAdd > div:first-of-type div > div > form > button:first-of-type{
+ background: none;
+ border: none;
+ outline: none;
+ font-size: 30px;
+ cursor: pointer;
+}
+
+#contentDoubleAdd > div:first-of-type div > div > form > button:first-of-type:hover{
+ color: #d12f2f;
+}
+
+#contentDoubleAdd > div:first-of-type div > div > form > button:last-of-type{
+ border: none;
+ background: #222;
+ outline: none;
+ font-size: 25px;
+ color: #fff;
+ text-transform: uppercase;
+ padding: 5px 10px 5px 10px;
+ float: right;
+ font-weight: bold;
+ cursor: pointer;
+}
+
+#contentDoubleAdd > div:first-of-type div > div > form > button:last-of-type:hover{
+ font-style: italic;
+}
+
+.tableDoubleAdd{
+  float: left;
+  width: auto !important;
+  max-height: 500px;
+  overflow-y: auto;
+  margin-top: 20px;
+  max-width: 389px;
+}
+
+.tableDoubleAdd:first-of-type{
+  position: absolute;
+  top: 115px;
+  left: 500px;
+}
+
+.tableDoubleAdd:last-of-type{
+  position: absolute;
+  top: 115px;
+  left: 900px;
+}
+
+.tableDoubleAdd table{
+  margin-top: 20px;
+  background: #222;
+  color: rgba(255,255,255,0.95);
+  font-family: Arial, sans-serif;
+}
+
+.tableDoubleAdd td{
+  font-size: 16px;
+  padding: 10px;
+}
+
+.tableDoubleAdd tbody td:first-of-type{
+  text-align: left;
+}
+
+.tableDoubleAdd tbody td{
+  text-align: center;
+  max-width: 150px;
+}
+
+.tableDoubleAdd tbody td a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.95);
+}
+
+.tableDoubleAdd tbody td a:hover{
+  color: #d12f2f !important;
+  cursor: pointer;
+}
+
+.tableDoubleAdd tbody tr:nth-child(odd){
+  background: #444;
+}
+
+.tableDoubleAdd tbody tr:nth-child(even){
+  background: #555;
+}
+
+.tableDoubleAdd th{
+  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/**************************************
+ *                                    *
+ *              HISTORY               *
+ *                                    *
+ **************************************/
+
+#contentHistory > h1{
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  background: #222;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.historyFilters{
+  font-family: Arial, sans-serif;
+  margin-left: 30px;
+  margin-top: 15px;
+  line-height: 50px;
+}
+
+.historyFilters input[type="TEXT"]{
+  border: 1px solid #222;
+  border-left: 6px solid #222;
+  padding: 10px;
+  outline: none;
+  background: #fff;
+}
+
+.historyFilters input[type="TEXT"]:not(:first-of-type){
+  margin-left: 10px;
+}
+
+.historyFilters button{
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #222;
+  outline: none;
+  background: #fff;
+  margin-left: 10px;
+}
+
+.historyFilters button:hover{
+  background: #f2f2f2;
+}
+
+.methodFilter{
+  border-radius: 50%;
+  background: #222;
+  color: #fff;
+  padding: 5px 8px 5px 8px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin-left: 20px;
+}
+
+.historyFilters input[type="RADIO"]{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.historyTable{
+  margin-left: 30px;
+  max-height: 350px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.historyTable:last-of-type{
+  margin-bottom: 50px;
+}
+
+
+.historyTable table{
+  background: #222;
+  color: rgba(255,255,255,0.95);
+  font-family: Arial, sans-serif;
+}
+
+.historyTable td{
+  font-size: 16px;
+  padding: 10px;
+}
+
+.historyTable tbody td{
+  text-align: center;
+  max-width: 300px;
+  min-width: 300px;
+  white-space: nowrap;
+}
+
+.historyTable tbody td a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.95);
+}
+
+.historyTable tbody td a:hover{
+  background: #d12f2f;
+  font-style: italic;
+}
+
+.historyChecks tbody td a:hover{
+  color: #d12f2f !important;
+  background: none !important;
+  font-style: italic;
+}
+
+.historyTable tbody tr:nth-child(odd){
+  background: #444;
+}
+
+.historyTable tbody tr:nth-child(even){
+  background: #555;
+}
+
+.historyTable th{
+  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.historyView tbody td{
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.back_button{
+  margin-left: 30px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #222;
+  padding: 5px;
+}
+
+.back_button:hover{
+  background: #d12f2f;
+  font-style: italic;
+}
+
+/* The Modal (background) */
+.graphModal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: Arial, sans-serif;
+}
+
+/* Modal Content/Box */
+.graphModal-content {
+    background-color: #fefefe;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    font-family: arial, sans-serif;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+.graphModal-content > h1{
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.graphModal-content > h2{
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.graphModal-content > p{
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.graphModal-content > div{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.graphModal-content > div > i{
+  margin-right: 2px;
+  font-size: 25px;
+}
+
+.graphModal-content > div > i:last-of-type{
+  margin-left: 10px;
+}
+
+.graphFooter{
+  text-align: center;
+}
+
+.graphFooter > span{
+  margin-right: 30px;
+}
+
+.historyBroken tbody td{
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.historyFilters > i {
+  font-size: 26px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.historyChecks tbody td{
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.historyTable input{
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 70px;
+  text-align: center;
+}
+
+.historyTable select{
+  width: 80px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+/**************************************
+ *                                    *
+ *               RESULT               *
+ *                                    *
+ **************************************/
+
+#result{
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#result > h1{
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+  display: inline-block;
+  color: #fff;
+  background: #111;
+  padding: 5px 10px 5px 10px;
+}
+
+#result > p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/**************************************
+ *                                    *
+ *               ETC                  *
+ *                                    *
+ **************************************/
+
+.seltitle{
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.frmselect{
+  max-width: 140px;
+}
+
+.prodtable{
+  position: absolute;
+  top: 180px;
+  left: 370px;
+  margin-bottom: 60px;
+}
+
+.regentries{
+  border: none;
+  background: #222;
+  outline: none;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.regentries:hover{
+  font-style: italic;
+}
+
+.historyFilters input:disabled{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.adicionarCampo{
+  color: #fff;
+  text-decoration: none;
+}
+
+.adicionarCampo:hover{
+  color: #70ffc3 !important;
+  background: none !important;
+  font-style: italic;
+}
+
+.backalt{
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.backalt:hover{
+  color: #d12f2f;
+}
+
+.filterdisplay > form{
+  display: inline-block;
+}
+
+.indev{
+  background: #222;
+  color: #555 !important;
+}
+
+.indev:hover{
+  background: #222 !important;
+  font-style: normal !important;
+  cursor: default !important;
+}
+
+.citytable{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.botao3:hover{
+  color: #d12f2f !important;
+  background: rgba(0,0,0,0) !important;
+}
